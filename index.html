@@ -26,8 +26,7 @@
     <button data-page="case"><span>03</span>案例分析</button>
     <button data-page="practice"><span>04</span>模拟训练</button>
     <button data-page="flash"><span>05</span>记忆闪卡</button>
-    <button data-page="quiz"><span>06</span>知识自测</button>
-    <button data-page="last"><span>07</span>考前速记</button>
+    <button data-page="last"><span>06</span>考前速记</button>
   </nav>
   <div class="side-bottom">
     <div>本地学习进度</div><div class="progressbar"><i id="sideProgress"></i></div>
@@ -163,8 +162,9 @@
     <div class="question"><div class="qmeta">论述题 · 模拟 04</div><h3>请从诺瓦克合作进化理论出发，说明组织中的合作与信任何以可能。</h3><button class="smallbtn" onclick="toggleAnswer('a4')">显示参考提纲</button><div class="answer" id="a4" hidden><p><strong>理论：</strong>亲缘选择、直接互惠、间接互惠、网络互惠、群体选择。</p><p><strong>关键：</strong>语言使间接互惠成为可能，名声可传播、规则可明文、意义可共享。</p><p><strong>组织启示：</strong>让合作者不吃亏；让背叛者有名声成本；让共同体有共同意义。</p><p><strong>落地：</strong>用公平绩效和透明规则保护合作，用一致的文化信号形成认同。</p></div></div>
     <div class="question"><div class="qmeta">案例题 · 模拟 05</div><h3>新任总经理大幅提高研发投入、调整销售考核，研发取得进展、回款改善，但销售额下降、老员工离职。董事长认为改革完全正确。请分析并提出处理顺序。</h3><button class="smallbtn" onclick="toggleAnswer('a5')">显示参考提纲</button><div class="answer" id="a5" hidden><p><strong>不要单一归因：</strong>研发成果和回款改善是局部结果；销售下降、离职可能反映制度切换、客户关系和团队整合代价。</p><p><strong>先核实：</strong>董事会授权、现金流、旧应收款、销售合同、离职原因、新品收入时间表。</p><p><strong>方案：</strong>短期排查坏账和现金风险；中期调整兼顾出货、回款和客户质量的绩效；长期保留知识、整合新旧团队、复盘研发生产销售接口。</p><p><strong>评价：</strong>现金回收、研发里程碑、客户稳定、人才留存、协同质量。</p></div></div>
     <div class="question"><div class="qmeta">案例题 · 模拟 06</div><h3>企业宣称诚信第一，但绩效只看短期数字，后来出现造假。请运用战略领导力理论分析。</h3><button class="smallbtn" onclick="toggleAnswer('a6')">显示参考提纲</button><div class="answer" id="a6" hidden><p><strong>核心矛盾：</strong>制度和文化错位。口号强调诚信，考核却奖励数字。</p><p><strong>制度：</strong>短期排名奖励造假，诚信者反而吃亏，规则在自动执行错误激励。</p><p><strong>文化：</strong>看用人、用钱、时间，而非文化墙；真实信号是数字至上。</p><p><strong>系统思维：</strong>追踪三年制度如何塑造行为，避免只怪员工觉悟。</p><p><strong>改进：</strong>加入客户、过程合规指标和造假后果；领导者以用人、资源配置和时间安排兑现诚信价值观。</p></div></div>
-    <div class="sectionhead"><div><div class="kicker">WRITE IT YOURSELF</div><h2>论述题练笔区</h2><p>写下自己的答案，先练结构，再练完整表达。内容只保存在当前浏览器。</p></div></div>
-    <div class="essaybox"><h3>自选题目</h3><select id="essaySelect" style="width:100%;background:#101819;color:#eee;border:1px solid #465653;border-radius:8px;padding:10px"><option>战略领导力是什么？为什么VUCA环境下需要战略领导力？</option><option>如何培养战略领导力？</option><option>制度与文化为什么必须结合？</option><option>信任为什么是战略领导力的核心？</option><option>管理者如何推动战略有效执行？</option></select><textarea id="essayDraft" placeholder="先写提纲：定义 / 分论点 / 理论 / 案例 / 结论……"></textarea><div class="quiz-footer"><span class="progress-label" id="draftStatus">草稿保存在本机浏览器</span><button class="smallbtn" onclick="saveDraft()">保存草稿</button></div></div>
+    <div class="sectionhead"><div><div class="kicker">WRITE IT YOURSELF</div><h2>考场写作训练区</h2><p>按真实考试形式练习：一道论述题 + 一道案例分析题。写完后保存草稿，训练完整表达。</p></div></div>
+    <div class="essaybox"><h3>第一题｜论述题</h3><select id="essaySelect" style="width:100%;background:#101819;color:#eee;border:1px solid #465653;border-radius:8px;padding:10px"><option>请结合战略领导力四层次模型，论述管理者应如何培养战略领导力。</option><option>为什么制度与文化必须结合？请结合VUCA环境说明其意义。</option><option>为什么信任是战略领导力的核心？如何构建体系化信任？</option><option>请结合诺瓦克合作进化理论，分析组织合作与信任如何形成。</option></select><textarea id="essayDraft" placeholder="建议结构：概念界定 → 分论点 → 理论模型 → 管理实践/案例 → 总结回扣题目……"></textarea><div class="quiz-footer"><span class="progress-label" id="draftStatus">草稿保存在本机浏览器</span><button class="smallbtn" onclick="saveDraft()">保存论述题草稿</button></div></div>
+    <div class="essaybox"><h3>第二题｜案例分析题</h3><p>模拟情境：一家企业引入新任总经理后，加大研发投入、调整销售考核。研发取得进展、回款改善，但销售额下降、老员工离职；董事长与总经理又在融资信息披露和财务授权上出现分歧。请分析主要矛盾，并提出处理方案。</p><textarea id="caseDraft" placeholder="建议结构：①角色与目标 ②已知事实与待核查事项 ③系统诊断（治理/制度/文化/人员/经营） ④短中长期方案 ⑤评价指标与复盘……"></textarea><div class="quiz-footer"><span class="progress-label" id="caseDraftStatus">案例草稿保存在本机浏览器</span><button class="smallbtn" onclick="saveCaseDraft()">保存案例草稿</button></div></div>
   </section>
 
   <section class="section" id="page-flash">
@@ -178,15 +178,8 @@
     <div class="callout"><strong>记忆技巧：</strong>不要反复读答案，要先遮住答案主动回忆。能用自己的话讲清楚，才算真正掌握。</div>
   </section>
 
-  <section class="section" id="page-quiz">
-    <div class="sectionhead"><div><div class="kicker">06 · KNOWLEDGE CHECK</div><h2>知识自测</h2><p>每题选择后提交，即时查看正确答案与解释。</p></div></div>
-    <div class="stats"><div class="stat"><strong id="quizDone">0</strong><span>已作答</span></div><div class="stat"><strong id="quizRight">0</strong><span>答对</span></div><div class="stat"><strong id="quizRate">—</strong><span>正确率</span></div><div class="stat"><strong>12</strong><span>自测题数</span></div></div>
-    <div id="quizList"></div>
-    <div class="quiz-footer"><button class="smallbtn" onclick="resetQuiz()">重新开始自测</button><span class="progress-label">题目来自课程复习要点</span></div>
-  </section>
-
   <section class="section" id="page-last">
-    <div class="sectionhead"><div><div class="kicker">07 · LAST-MINUTE REVIEW</div><h2>考前速记</h2><p>进考场前只看这一页，把整门课压缩成几条主线。</p></div><button class="smallbtn" onclick="window.print()">打印速记</button></div>
+    <div class="sectionhead"><div><div class="kicker">06 · LAST-MINUTE REVIEW</div><h2>考前速记</h2><p>进考场前只看这一页，把整门课压缩成几条主线。</p></div><button class="smallbtn" onclick="window.print()">打印速记</button></div>
     <div class="quote">制度 + 文化 → 信任体系 → 广泛且长远的正向人际影响力。</div>
     <div class="memory-grid">
       <div class="memory"><b>一个定义</b><p>战略领导力：制度与文化导向的信任体系，产生广泛且长远的正向人际影响力。</p></div>
@@ -218,7 +211,7 @@
 </div>
 <div id="toast" class="toast hide" role="status"></div>
 <script>
-const pageNames={home:"复习首页",core:"核心知识",textbook:"教材框架",case:"案例分析",practice:"模拟训练",flash:"记忆闪卡",quiz:"知识自测",last:"考前速记"};
+const pageNames={home:"复习首页",core:"核心知识",textbook:"教材框架",case:"案例分析",practice:"模拟训练",flash:"记忆闪卡",last:"考前速记"};
 function showPage(name){document.querySelectorAll(".section").forEach(x=>x.classList.toggle("active",x.id==="page-"+name));document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.page===name));window.scrollTo({top:0,behavior:"smooth"});history.replaceState(null,"","#"+name)}
 document.querySelectorAll(".nav button").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
 function toggleAnswer(id){const el=document.getElementById(id);el.hidden=!el.hidden;event.target.textContent=el.hidden?"显示参考提纲":"收起参考提纲"}
@@ -247,28 +240,11 @@ const flashcards=[
 let flashIndex=0,flipped=false,known=JSON.parse(localStorage.getItem("sl-known")||"[]"),flashOrder=flashcards.map((_,i)=>i);
 function renderFlash(){const f=flashcards[flashOrder[flashIndex]];document.getElementById("flashLabel").textContent=flipped?"ANSWER":"QUESTION";document.getElementById("flashTitle").textContent=flipped?f[0]:f[0];document.getElementById("flashBody").textContent=flipped?f[1]:"先尝试在心里完整回答，再点击卡片查看答案。";document.querySelector(".flashcard .hint").textContent=flipped?"点击卡片返回问题面":"点击卡片翻面 · 自己先答，再看答案";document.getElementById("flashCount").textContent="第 "+(flashIndex+1)+" / "+flashcards.length+" 张 · 已掌握 "+known.length+" 张";document.getElementById("knownBtn").textContent=known.includes(flashOrder[flashIndex])?"已掌握 ✓":"我已掌握 ✓";document.getElementById("sideProgressText").textContent="已掌握 "+known.length+" / "+flashcards.length+" 张闪卡";document.getElementById("sideProgress").style.width=(known.length/flashcards.length*100)+"%"}
 function flipCard(){flipped=!flipped;renderFlash()}function nextCard(){flashIndex=(flashIndex+1)%flashOrder.length;flipped=false;renderFlash()}function prevCard(){flashIndex=(flashIndex-1+flashOrder.length)%flashOrder.length;flipped=false;renderFlash()}function markKnown(){const id=flashOrder[flashIndex];if(!known.includes(id)){known.push(id);localStorage.setItem("sl-known",JSON.stringify(known));notify("已记录掌握进度")}else{known=known.filter(x=>x!==id);localStorage.setItem("sl-known",JSON.stringify(known));notify("已取消掌握标记")}renderFlash()}function resetFlash(){if(confirm("确定清空全部闪卡掌握记录？")){known=[];localStorage.removeItem("sl-known");renderFlash()}}function shuffleCards(){flashOrder.sort(()=>Math.random()-.5);flashIndex=0;flipped=false;renderFlash();notify("已打乱闪卡顺序")}
-const quizData=[
-{q:"战略领导力的核心定义，最准确的是哪一项？",o:["通过职位权力让成员服从","通过制度和文化导向的信任体系，产生广泛且长远的正向人际影响力","依靠个人专业能力完成战略规划","通过绩效考核确保所有员工完成任务"],a:1,e:"定义中的关键链条是制度与文化 → 信任体系 → 广泛且长远的正向人际影响力。"},
-{q:"课堂四层次模型从基础到结果的正确顺序是？",o:["制度文化→系统思维→信任→影响力","系统思维→制度与文化→体系化信任→正向人际影响力","信任→制度文化→系统思维→影响力","系统思维→信任→制度文化→影响力"],a:1,e:"从下往上是培养路径：系统思维、制度与文化、体系化信任、正向人际影响力。"},
-{q:"制度设计的三项基本要求是？",o:["创新、速度、成本","平等、专业、严谨","真诚、专注、宽容","信心、承诺、责任"],a:1,e:"平等、专业、严谨属于制度设计；真诚、专注、宽容属于文化定位。"},
-{q:"文化定位能力的三个要求是？",o:["平等、专业、严谨","整体观、普遍联系、历史观","真诚、专注、宽容","信心、承诺、责任"],a:2,e:"文化定位强调真诚、专注、宽容。"},
-{q:"完整规则的三个构成是什么？",o:["目标、预算、考核","行为规范、适用范围、执行条件与违反规则的后果","愿景、使命、价值观","岗位、人员、流程"],a:1,e:"规则不仅要写做什么，还要明确适用范围、执行条件和违规后果。"},
-{q:"“制度是利益的纽带，文化是精神的纽带”说明什么？",o:["制度和文化相互替代","制度只适用于顺境，文化只适用于管理层","制度与文化功能不同但相互依存","文化比制度更重要，可以不设计规则"],a:2,e:"制度保障公平和利益预期，文化提供意义和认同，二者需要匹配。"},
-{q:"教材DAC中的A代表什么？",o:["Authority，权威","Alignment，战略协同","Action，行动","Assessment，评估"],a:1,e:"DAC：Direction战略引领、Alignment战略协同、Commitment战略承诺。"},
-{q:"战略思考五项能力不包括哪一项？",o:["环境扫描","制定愿景","问题重述","财务审批"],a:3,e:"教材第二章五项能力包括环境扫描、制定愿景、问题重述、达成共识、系统思考。"},
-{q:"战略行动的三项能力包括哪一项？",o:["在不确定性中果断行动","制定愿景","管理政治格局","建立情感联系"],a:0,e:"第三章强调果断行动、敏捷性、以清晰战略重点建立一致性。"},
-{q:"教材的三维信任是？",o:["信心、承诺、责任","契约信任、胜任信任、沟通信任","平等、专业、严谨","战略、组织、绩效"],a:1,e:"课堂三要素和教材三维度是两套不同分类，答题时要分清。"},
-{q:"诺瓦克合作进化五规则不包括？",o:["亲缘选择","直接互惠","间接互惠","短期利润最大化"],a:3,e:"五规则为亲缘选择、直接互惠、间接互惠、网络互惠、群体选择。"},
-{q:"第六章领导力战略的四大要素是？",o:["使命、愿景、价值观、利润","驱动要素、领导力文化、人才系统、组织结构设计","制度、流程、预算、考核","领导者、员工、客户、供应商"],a:1,e:"四大要素必须配套设计，单独调整组织架构或只做培训都不够。"}
-];
-let quizState=JSON.parse(localStorage.getItem("sl-quiz")||"{}");
-function renderQuiz(){const root=document.getElementById("quizList");root.innerHTML="";quizData.forEach((q,i)=>{const box=document.createElement("div");box.className="question";const saved=quizState[i];let html='<div class="qmeta">QUESTION '+String(i+1).padStart(2,"0")+'</div><h3>'+q.q+'</h3><div class="options">';q.o.forEach((op,j)=>{html+='<button class="option '+(saved&&saved.pick===j?(j===q.a?"correct":"wrong"):"")+'" data-q="'+i+'" data-o="'+j+'"><span class="letter">'+String.fromCharCode(65+j)+'</span><span>'+op+'</span></button>'});html+='</div><div class="quiz-footer"><span class="progress-label">'+(saved?(saved.pick===q.a?"已答对":"已作答"):"请选择一个答案")+'</span><button class="smallbtn check" data-check="'+i+'">提交答案</button></div><div class="feedback '+(saved?(saved.pick===q.a?"good":"bad"):"")+'" '+(saved?"":"hidden")+'>'+(saved?(saved.pick===q.a?"回答正确。":"回答不正确。"):"")+q.e+'</div>';box.innerHTML=html;root.appendChild(box)});root.querySelectorAll(".option").forEach(b=>b.addEventListener("click",()=>{const q=Number(b.dataset.q);const box=b.closest(".question");box.querySelectorAll(".option").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");box.dataset.pick=b.dataset.o}));root.querySelectorAll(".check").forEach(b=>b.addEventListener("click",()=>{const i=Number(b.dataset.check);const box=b.closest(".question");const pick=box.dataset.pick;if(pick===undefined){notify("请先选择答案");return}quizState[i]={pick:Number(pick)};localStorage.setItem("sl-quiz",JSON.stringify(quizState));renderQuiz()}));updateQuizStats()}
-function updateQuizStats(){const vals=Object.keys(quizState);const right=vals.filter(k=>Number(quizState[k].pick)===quizData[Number(k)].a).length;document.getElementById("quizDone").textContent=vals.length;document.getElementById("quizRight").textContent=right;document.getElementById("quizRate").textContent=vals.length?Math.round(right/vals.length*100)+"%":"—"}
-function resetQuiz(){if(confirm("确定清空自测记录并重新开始？")){quizState={};localStorage.removeItem("sl-quiz");renderQuiz()}}
 function saveDraft(){localStorage.setItem("sl-essay-title",document.getElementById("essaySelect").value);localStorage.setItem("sl-essay-draft",document.getElementById("essayDraft").value);document.getElementById("draftStatus").textContent="已保存 · "+new Date().toLocaleTimeString();notify("草稿已保存在本机")}
-function loadDraft(){const t=localStorage.getItem("sl-essay-title"),d=localStorage.getItem("sl-essay-draft");if(t)document.getElementById("essaySelect").value=t;if(d)document.getElementById("essayDraft").value=d}
+function saveCaseDraft(){localStorage.setItem("sl-case-draft",document.getElementById("caseDraft").value);document.getElementById("caseDraftStatus").textContent="已保存 · "+new Date().toLocaleTimeString();notify("案例草稿已保存在本机")}
+function loadDraft(){const t=localStorage.getItem("sl-essay-title"),d=localStorage.getItem("sl-essay-draft"),c=localStorage.getItem("sl-case-draft");if(t)document.getElementById("essaySelect").value=t;if(d)document.getElementById("essayDraft").value=d;if(c)document.getElementById("caseDraft").value=c}
 function notify(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.remove("hide");clearTimeout(window._toastTimer);window._toastTimer=setTimeout(()=>t.classList.add("hide"),1800)}
-renderFlash();renderQuiz();loadDraft();
+renderFlash();loadDraft();
 </script>
 </body>
 </html>
