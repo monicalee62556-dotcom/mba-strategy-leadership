@@ -449,7 +449,8 @@ const flashcards=[
 ["文化的真实信号","看管理者用什么人、把钱投向哪里、时间花在哪里，而不只听口号。"],
 ["管理者整体绩效","管理者承担整体绩效而非个人绩效；若认为自己最厉害，可能成为团队瓶颈。"],
 ["制度、结构与流程","岗位责权利由规则界定；组织结构图是规则体系的形象化表达，流程体现分工协作过程。"],
-["文化的第一价值观","第一价值观是不能再问为什么的根本信念；价值观靠行为传递，言行一致才会落地。"]
+["文化的第一价值观","第一价值观是不能再问为什么的根本信念；价值观靠行为传递，言行一致才会落地。"],
+["文化定位而非文化设计","文化是历史演进形成的传统；管理者要在既有文化中判断、选择和定位，而不是凭个人意志凭空设计。"]
 ];
 let flashIndex=0,flipped=false,known=JSON.parse(localStorage.getItem("sl-known")||"[]"),flashOrder=flashcards.map((_,i)=>i);
 function renderFlash(){const f=flashcards[flashOrder[flashIndex]];document.getElementById("flashLabel").textContent=flipped?"ANSWER":"QUESTION";document.getElementById("flashTitle").textContent=flipped?f[0]:f[0];document.getElementById("flashBody").textContent=flipped?f[1]:"先尝试在心里完整回答，再点击卡片查看答案。";document.querySelector(".flashcard .hint").textContent=flipped?"点击卡片返回问题面":"点击卡片翻面 · 自己先答，再看答案";document.getElementById("flashCount").textContent="第 "+(flashIndex+1)+" / "+flashcards.length+" 张 · 已掌握 "+known.length+" 张";document.getElementById("knownBtn").textContent=known.includes(flashOrder[flashIndex])?"已掌握 ✓":"我已掌握 ✓";document.getElementById("sideProgressText").textContent="已掌握 "+known.length+" / "+flashcards.length+" 张闪卡";document.getElementById("sideProgress").style.width=(known.length/flashcards.length*100)+"%"}
